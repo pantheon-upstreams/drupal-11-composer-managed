@@ -1,6 +1,6 @@
 {
-    "name": "pantheon-upstreams/drupal-composer-managed",
-    "description": "Install Drupal 9 with Composer on Pantheon.",
+    "name": "r0nn1ef/drupal-composer-managed",
+    "description": "Install Drupal 11 with Composer on Pantheon.",
     "type": "project",
     "license": "MIT",
     "repositories": [
@@ -14,16 +14,16 @@
         }
     ],
     "require": {
-        "pantheon-upstreams/upstream-configuration": "dev-main",
         "composer/installers": "^1.9",
-        "drupal/core-composer-scaffold": "^11",
-        "drupal/core-recommended": "^11",
-        "pantheon-systems/drupal-integrations": "^11",
+        "drupal/core-composer-scaffold": ">=11.0",
+        "drupal/core": ">=11.0",
+        "drupal/core-recommended": ">=11.0",
+        "pantheon-systems/drupal-integrations": ">=11.0",
         "cweagans/composer-patches": "^1.7",
         "drush/drush": "^13"
     },
     "require-dev": {
-        "drupal/core-dev": "^11"
+        "drupal/core-dev": ">=11.0"
     },
     "conflict": {
         "drupal/drupal": "*"
